@@ -1,0 +1,29 @@
+.current-weather {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 데스크톱에서 3열 */
+  gap: 16px; /* 열 간격 */
+  padding: 16px;
+}
+
+.current-weather .weather-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd; /* 카드 스타일 */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* 반응형: 화면 크기에 따라 열 개수 조정 */
+@media (max-width: 1024px) {
+  .current-weather {
+    grid-template-columns: repeat(2, 1fr); /* 태블릿에서 2열 */
+  }
+}
+
+@media (max-width: 768px) {
+  .current-weather {
+    grid-template-columns: 1fr; /* 모바일에서 1열 */
+  }
+}

@@ -1,0 +1,26 @@
+.weather-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.rain-animation,
+.clear-animation,
+.snow-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.rain-animation line {
+  opacity: 0.5;
+}
+
+.snow-animation circle {
+  opacity: 0.8;
+}
