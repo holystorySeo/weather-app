@@ -84,6 +84,7 @@ const Home: React.FC = () => {
       if (location !== favoriteLocation) {
         setLocation(favoriteLocation);
         setSearchLocation(favoriteLocation);
+        setSearchInput("");
         setIsSidebarOpen(false);
       }
     },
