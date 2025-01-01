@@ -116,12 +116,12 @@ const Home: React.FC = () => {
           <h2>검색된 위치: {searchLocation}</h2>
         </div>
 
-        <div className="loading-container">{loading && <p>날씨 데이터를 불러오는 중...</p>}</div>
+        {/* <div className="loading-container">{loading && <p>날씨 데이터를 불러오는 중...</p>}</div> */}
 
         {weather || error ? (
           <CurrentWeather weather={weather} locationName={searchLocation || userLocation || "서울"} error={error} />
         ) : (
-          <p>❓ 데이터를 불러오는 중입니다.</p>
+          <p>날씨 데이터를 불러오는 중....</p>
         )}
         {hourlyWeather && <WeatherDisplay weatherData={hourlyWeather} />}
       </div>
