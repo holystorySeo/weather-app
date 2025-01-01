@@ -6,7 +6,6 @@ interface Props {
 }
 
 const WeatherBackground: React.FC<Props> = ({ weather }) => {
-  console.log("====weather", weather);
   return (
     <div className="weather-background">
       {weather === "rain" && <RainAnimation />}
